@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover considered architecture and exceptional homes with EstateVista, a curated collection of distinctive properties.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>EstateVista — Find a place beyond ordinary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span>THE ESTATEVISTA COLLECTION</span>
+    <span class="announcement-note">A considered approach to exceptional living</span>
+  </div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="EstateVista home">estate<span>vista</span><i>.</i></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#properties">Properties</a>
+      <a href="#philosophy">Our approach</a>
+      <a href="#journal">The journal</a>
+    </nav>
+    <a class="header-contact" href="#contact">Speak with an advisor <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=88" alt="Contemporary villa opening onto a landscaped garden">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light-eyebrow"><span></span> A different kind of property search</p>
+        <h1>Find a place<br> <em>beyond ordinary.</em></h1>
+        <p class="hero-copy">Distinctive homes, considered architecture, and spaces that feel like they were always meant to be yours.</p>
+        <a class="button button-light" href="#properties">Explore the collection <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-caption"><span>01 / PRIVATE RESIDENCES</span><span>Thoughtfully found. Beautifully lived.</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="philosophy">
+      <div class="intro-label"><span class="fine-line"></span><span>MORE THAN AN ADDRESS</span></div>
+      <div class="intro-copy">
+        <h2>Some places simply<br> <em>feel different.</em></h2>
+        <p>We believe the right home is more than square footage or a postcode. It is the light in the morning, the quiet at the end of the day, and the details that make a space your own.</p>
+      </div>
+      <div class="intro-index">EST. <span>2024</span></div>
+    </section>
+
+    <section class="properties section-wrap" id="properties">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> THE COLLECTION</p>
+          <h2>Homes worth <em>coming home to.</em></h2>
+        </div>
+        <p class="section-aside">A curated selection of remarkable homes, chosen for their character, craft, and sense of place.</p>
+      </div>
+
+      <form class="search-panel" id="property-search">
+        <label class="search-field">
+          <span>LOCATION OR KEYWORD</span>
+          <input type="search" id="location-search" placeholder="Try 'Lahore' or 'garden'" autocomplete="off">
+        </label>
+        <label class="search-field">
+          <span>PROPERTY TYPE</span>
+          <select id="type-filter">
+            <option value="all">All properties</option>
+            <option value="villa">Villa</option>
+            <option value="house">House</option>
+            <option value="penthouse">Penthouse</option>
+            <option value="apartment">Apartment</option>
+          </select>
+        </label>
+        <label class="search-field">
+          <span>MAXIMUM PRICE</span>
+          <select id="price-filter">
+            <option value="all">Any price</option>
+            <option value="500000">$500,000</option>
+            <option value="1000000">$1,000,000</option>
+            <option value="2000000">$2,000,000</option>
+            <option value="3000000">$3,000,000</option>
+          </select>
+        </label>
+        <button class="search-button" type="submit">Find a home <span aria-hidden="true">↗</span></button>
+      </form>
+
+      <div class="results-row">
+        <p id="results-count" aria-live="polite">Showing 6 considered properties</p>
+        <label class="sort-control">SORT BY
+          <select id="sort-filter" aria-label="Sort properties">
+            <option value="featured">Featured</option>
+            <option value="low-high">Price: low to high</option>
+            <option value="high-low">Price: high to low</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="property-grid" id="property-grid">
+        <article class="property-card" data-location="lahore pakistan garden contemporary" data-type="villa" data-price="1850000">
+          <a class="property-image" href="#contact" aria-label="Enquire about The Garden House">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Contemporary villa with a garden and outdoor seating" loading="lazy">
+            <span class="property-tag">EDITOR'S PICK</span>
+          </a>
+          <button class="favorite" type="button" aria-label="Save The Garden House" aria-pressed="false">♡</button>
+          <div class="property-info">
+            <div class="property-location">LAHORE · PAKISTAN <span>01</span></div>
+            <h3>The Garden House</h3>
+            <p class="property-description">A calm, contemporary retreat wrapped in greenery.</p>
+            <div class="property-specs"><span>4 beds</span><span>5 baths</span><span>4,200 sq ft</span></div>
+            <div class="property-bottom"><p class="price">$1,850,000</p><a href="#contact" class="text-link">Enquire <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="property-card" data-location="karachi pakistan ocean sea view penthouse" data-type="penthouse" data-price="2750000">
+          <a class="property-image" href="#contact" aria-label="Enquire about The Horizon Penthouse">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Sleek luxury residence with floor-to-ceiling windows" loading="lazy">
+            <span class="property-tag">SEA VIEWS</span>
+          </a>
+          <button class="favorite" type="button" aria-label="Save The Horizon Penthouse" aria-pressed="false">♡</button>
+          <div class="property-info">
+            <div class="property-location">KARACHI · PAKISTAN <span>02</span></div>
+            <h3>The Horizon Penthouse</h3>
+            <p class="property-description">Elevated living with a horizon that never gets old.</p>
+            <div class="property-specs"><span>3 beds</span><span>3 baths</span><span>3,100 sq ft</span></div>
+            <div class="property-bottom"><p class="price">$2,750,000</p><a href="#contact" class="text-link">Enquire <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="property-card" data-location="islamabad pakistan modern house hills trees" data-type="house" data-price="980000">
+          <a class="property-image" href="#contact" aria-label="Enquire about Cedar Ridge">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Modern home with natural stone and warm timber details" loading="lazy">
+            <span class="property-tag">NEW TO MARKET</span>
+          </a>
+          <button class="favorite" type="button" aria-label="Save Cedar Ridge" aria-pressed="false">♡</button>
+          <div class="property-info">
+            <div class="property-location">ISLAMABAD · PAKISTAN <span>03</span></div>
+            <h3>Cedar Ridge</h3>
+            <p class="property-description">Natural materials and quiet corners, thoughtfully composed.</p>
+            <div class="property-specs"><span>4 beds</span><span>4 baths</span><span>3,600 sq ft</span></div>
+            <div class="property-bottom"><p class="price">$980,000</p><a href="#contact" class="text-link">Enquire <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="property-card" data-location="dubai uae apartment skyline downtown" data-type="apartment" data-price="650000">
+          <a class="property-image" href="#contact" aria-label="Enquire about The Atelier Residence">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85" alt="Warm modern apartment interior with curated furniture" loading="lazy">
+            <span class="property-tag">DESIGN-LED</span>
+          </a>
+          <button class="favorite" type="button" aria-label="Save The Atelier Residence" aria-pressed="false">♡</button>
+          <div class="property-info">
+            <div class="property-location">DUBAI · UAE <span>04</span></div>
+            <h3>The Atelier Residence</h3>
+            <p class="property-description">A considered apartment with a softer city rhythm.</p>
+            <div class="property-specs"><span>2 beds</span><span>2 baths</span><span>1,450 sq ft</span></div>
+            <div class="property-bottom"><p class="price">$650,000</p><a href="#contact" class="text-link">Enquire <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="property-card" data-location="tuscany italy villa countryside olive trees" data-type="villa" data-price="2950000">
+          <a class="property-image" href="#contact" aria-label="Enquire about Villa Oliva">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Sunlit villa exterior surrounded by a landscaped garden" loading="lazy">
+            <span class="property-tag">COUNTRY LIVING</span>
+          </a>
+          <button class="favorite" type="button" aria-label="Save Villa Oliva" aria-pressed="false">♡</button>
+          <div class="property-info">
+            <div class="property-location">TUSCANY · ITALY <span>05</span></div>
+            <h3>Villa Oliva</h3>
+            <p class="property-description">An unhurried country home made for long afternoons.</p>
+            <div class="property-specs"><span>5 beds</span><span>4 baths</span><span>5,100 sq ft</span></div>
+            <div class="property-bottom"><p class="price">$2,950,000</p><a href="#contact" class="text-link">Enquire <span>↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="property-card" data-location="london england townhouse city garden" data-type="house" data-price="1450000">
+          <a class="property-image" href="#contact" aria-label="Enquire about The Wren Townhouse">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85" alt="Elegant contemporary townhouse interior with natural finishes" loading="lazy">
+            <span class="property-tag">CITY SANCTUARY</span>
+          </a>
+          <button class="favorite" type="button" aria-label="Save The Wren Townhouse" aria-pressed="false">♡</button>
+          <div class="property-info">
+            <div class="property-location">LONDON · UK <span>06</span></div>
+            <h3>The Wren Townhouse</h3>
+            <p class="property-description">A refined city base with room to breathe.</p>
+            <div class="property-specs"><span>3 beds</span><span>3 baths</span><span>2,250 sq ft</span></div>
+            <div class="property-bottom"><p class="price">$1,450,000</p><a href="#contact" class="text-link">Enquire <span>↗</span></a></div>
+          </div>
+        </article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden>
+        <p class="empty-title">Nothing quite matches.</p>
+        <p>Try a different location or widen your price range.</p>
+        <button class="button button-dark" id="reset-search" type="button">Clear filters</button>
+      </div>
+      <div class="collection-note"><span>ESTATEVISTA / CURATED HOMES</span><span>Six places to begin</span></div>
+    </section>
+
+    <section class="quote-band" id="journal">
+      <div class="quote-mark">“</div>
+      <blockquote>A home should tell a story —<br>and leave room for the next chapter.</blockquote>
+      <p>NOTES ON THE ART OF LIVING</p>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div>
+        <p class="eyebrow"><span></span> YOUR NEXT CHAPTER</p>
+        <h2>Let's find your<br><em>somewhere.</em></h2>
+      </div>
+      <div class="contact-copy">
+        <p>Tell us what home means to you. Our property team would be delighted to help you explore the collection.</p>
+        <a class="button button-dark" href="mailto:hello@estatevista.example?subject=EstateVista%20property%20enquiry">Start a conversation <span aria-hidden="true">↗</span></a>
+        <p class="contact-small">Demo contact link — replace with your own contact details.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#">estate<span>vista</span><i>.</i></a>
+    <p>Exceptional spaces. Considered living.</p>
+    <div class="footer-bottom"><span>© <span id="year">2025</span> EstateVista. Concept project.</span><a href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+</body>
+</html>
