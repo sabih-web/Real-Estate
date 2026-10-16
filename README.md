@@ -65,7 +65,3 @@ The photography is loaded from Unsplash image URLs and therefore requires an int
 - Search by additional property attributes
 - Form validation and an enquiry form endpoint
 - Unit tests and further accessibility checks
-
-## Author
-
-Your Name — add your GitHub profile link here.
